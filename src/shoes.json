@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "yellow",
+        "image": "./public/images/yellow.png"
+    },
+    {
+        "id": 2,
+        "name": "polkadot",
+        "image": "./public/images/polkadot.jpg"
+    },
+    {
+        "id": 3,
+        "name": "pinkgreen",
+        "image": "./public/images/pinkgreen.jpg"
+    },
+    {
+        "id": 4,
+        "name": "pink",
+        "image": "./public/images/yellow.png"
+    },
+    {
+        "id": 5,
+        "name": "orange",
+        "image": "./public/images/orange.jpg"
+    },
+    {
+        "id": 6,
+        "name": "multiblue",
+        "image": "./public/images/multiblue.jpg"
+    },
+    {
+        "id": 7,
+        "name": "lightlight",
+        "image": "./public/images/lightlight.jpg"
+    },
+    {
+        "id": 8,
+        "name": "multi",
+        "image": "./public/images/multi.jpg"
+    },
+    {
+        "id": 9,
+        "name": "lightblue",
+        "image": "./public/images/lightblue.png"
+    },
+    {
+        "id": 10,
+        "name": "hightop",
+        "image": "./public/images/hightop.jpg"
+    },
+    {
+        "id": 11,
+        "name": "grey",
+        "image": "./public/images/grey.png"
+    },
+    {
+        "id": 12,
+        "name": "green",
+        "image": "./public/images/green.jpg"
+    },
+    {
+        "id": 13,
+        "name": "darkblue",
+        "image": "./public/images/darkblue.jpg"
+    },
+    {
+        "id": 14,
+        "name": "bluerun",
+        "image": "./public/images/bluerun.jpg"
+    },
+    {
+        "id": 15,
+        "name": "blueandwhite",
+        "image": "./public/images/blueandwhite.png"
+    },
+    {
+        "id": 16,
+        "name": "2012",
+        "image": "./public/images/2012.png"
+    }
+]
