@@ -1,0 +1,18 @@
+div.card {
+    display: inline-block;
+    width: 25%;
+    height: 100px;
+}
+img {
+ border: 5px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+  height: 150px;
+    /* margin: 10px 10px 10px 10px; */
+   }
+/* 
+.img-container {
+    border: 1px solid;
+    padding: 10px;
+} */
