@@ -1,7 +1,7 @@
 div.card {
     display: inline-block;
-    width: 25%;
-    height: 100px;
+     width: 25%;
+/*height: 100px; */
 }
 img {
  border: 5px solid #ddd;
@@ -11,6 +11,10 @@ img {
   height: 150px;
     /* margin: 10px 10px 10px 10px; */
    }
+.container {
+
+
+}
 /* 
 .img-container {
     border: 1px solid;

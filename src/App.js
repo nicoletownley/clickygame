@@ -9,8 +9,22 @@ import './App.css';
 import ShoeCard from './components/ShoeCard/index';
 import shoes from './shoes.json';
 
-export default class App extends Component {
 
+export default class App extends Component {
+  constructor(props) {
+
+    super(props);
+    this.state = {
+      score: 0,
+      bestScore:0,
+      correct: true,
+      display: "",
+      priorclick: -1,
+      
+    }
+}
+
+  
   shuffleShoeCard(shoes) {
     for (let i = shoes.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -21,15 +35,25 @@ export default class App extends Component {
     return shoes;
   }
 
-  selectImage = () => {
-    console.log('Clicked');
-  }
+  selectImage = (id) => {
+    console.log(id);
+    if (this.state.correct===true) {
+      this.setState ({score: this.state.score +1});
+      this.setState ({display:" You Guessed Correctly!"});
+    }
+     else {
+      this.setState ({display:" You Guessed Incorrectly!"});
+    }
+    
+  };
 
   render() {
+    console.log (this.state.score);
     let shuffledshoes = this.shuffleShoeCard(shoes);
     return (
       shuffledshoes.map((shoe) => (
         <ShoeCard key={shoe.id} image={shoe.image} click={this.selectImage}></ShoeCard>
+        
       ))
     )
   }
