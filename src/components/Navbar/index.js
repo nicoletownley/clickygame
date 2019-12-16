@@ -5,7 +5,7 @@ export default class Navbar extends Component {
   render() {
     return (
       
-      <nav class="navbar navbar-expand-large navbar-black bg-black p-0">
+      <nav className="navbar navbar-expand-large navbar-black bg-black p-0">
         <ul>
           <li className="brand">
             <a ref="/">Clicky Game</a>

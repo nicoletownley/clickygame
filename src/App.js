@@ -16,6 +16,7 @@ export default class App extends Component {
       correct: true,
       display: "",
       priorClick: -1,
+      topScore: 0,
 
     }
   }
