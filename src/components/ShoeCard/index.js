@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import './style.css';
 
 export default class ShoeCard extends Component {
-
+    handleOnClick = () => {
+        this.props.click (this.props.id)
+    }
     //set it up so function will run when pictures are clicked on
     render() {
         return (
                 <div className='card'>
                     <div className='img-container' >
-                        <img alt={this.props.id} src={this.props.image} onClick={this.props.click} />
+                        <img alt={this.props.id} src={this.props.image} onClick={this.handleOnClick} />
                     </div>
                 </div >
         )
