@@ -4,7 +4,7 @@
     This app is deployed on GitHub pages at: https://nicoletownley.github.io/clickygame
 
 # **__What Problem Does The Application Solve?__**  
-The application relieves bordem by employing the memory through this game.
+The application relieves boredom by employing the memory through this game.
 
 # **__What Is The App Doing?__** 
 The app randomly generates pictures and challenges the user to remember where they last clicked so they avoid consecutively choosing the same photo.
