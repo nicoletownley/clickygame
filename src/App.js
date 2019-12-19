@@ -1,9 +1,10 @@
 
 import React, { Component } from 'react';
 import './App.css';
-import ShoeCard from './components/ShoeCard/index';
+import ShoeCard from './components/ShoeCard';
 import shoes from './shoes.json';
-import Navbar from './components/Navbar/index';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 
 export default class App extends Component {
@@ -41,16 +42,16 @@ export default class App extends Component {
     }
     else {
       this.setState({ display: " You Guessed Incorrectly!" });
-      this.setState({score: 0});
+      this.setState({ score: 0 });
     }
     this.setState({ priorClick: id });
-  
+
     if (this.state.correct === true && this.state.score >= this.state.topScore) {
-      this.setState({topScore: this.state.score +1});
+      this.setState({ topScore: this.state.score + 1 });
 
     }
   };
-  
+
 
   displayShoes = () => {
     let shuffledshoes = this.shuffleShoeCard(shoes)
@@ -58,21 +59,22 @@ export default class App extends Component {
       <ShoeCard key={shoe.id} id={shoe.id} image={shoe.image} click={this.selectImage}></ShoeCard>)
 
     ));
-    }
+  }
 
   render() {
     console.log("score: ", this.state.score);
+    console.log (Footer);
 
-  
+
     return (
       <div>
         <Navbar score={this.state.score} topScore={this.state.topScore} display={this.state.display}></Navbar>
-      <div className = 'grid-container'> {this.displayShoes()}
-      </div>
+        <div className='grid-container'> {this.displayShoes()}
+        </div>
+        <Footer />
       </div>
     )
 
   }
 }
 
-   
