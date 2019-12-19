@@ -12,9 +12,9 @@ export default class App extends Component {
     super(props);
     this.state = {
       score: 0,
-      bestScore: 0,
       correct: true,
-      display: "",
+      display: "Click an image to begin!",
+      footer: "Clicky Game!",
       priorClick: -1,
       topScore: 0,
 
@@ -41,9 +41,16 @@ export default class App extends Component {
     }
     else {
       this.setState({ display: " You Guessed Incorrectly!" });
+      this.setState({score: 0});
     }
     this.setState({ priorClick: id });
+  
+    if (this.state.correct === true && this.state.score >= this.state.topScore) {
+      this.setState({topScore: this.state.score +1});
+
+    }
   };
+  
 
   displayShoes = () => {
     let shuffledshoes = this.shuffleShoeCard(shoes)
@@ -59,8 +66,9 @@ export default class App extends Component {
   
     return (
       <div>
-        <Navbar score={this.state.score} display={this.state.display}></Navbar>
-        {this.displayShoes()}
+        <Navbar score={this.state.score} topScore={this.state.topScore} display={this.state.display}></Navbar>
+      <div className = 'grid-container'> {this.displayShoes()}
+      </div>
       </div>
     )
 

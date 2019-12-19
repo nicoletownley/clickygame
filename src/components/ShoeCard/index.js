@@ -8,16 +8,13 @@ export default class ShoeCard extends Component {
     //set it up so function will run when pictures are clicked on
     render() {
         return (
-                <div className='card'>
-                    <div className='img-container' >
+                <div className='grid-item'>
                         <img alt={this.props.id} src={this.props.image} onClick={this.handleOnClick} />
-                    </div>
+    
                 </div >
         )
     }
 }
-
-//style.css
 
 
 
@@ -35,4 +32,4 @@ export default class ShoeCard extends Component {
 
 
 
-//     export default ShoeCard;
+//    export default Navbar;
